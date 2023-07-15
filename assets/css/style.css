@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+    --roxoclaro: #BD93F9;
+    --branco: #f7f7f7;
+    --cinzaescuro: #282A36;
+    --cinzaclaro: #44475A;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--roxoclaro);
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#verificadorPangrama {
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cinzaescuro);
+    padding: 2rem;
+    border-radius: 9px;
+    width: 40rem;
+    height: 25rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#titulo {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.caixaInput label {
+    font-size: 1.5rem;
+    color: var(--branco);
+}
+
+.campoInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--cinzaclaro);
+    padding: 0.3rem;
+    border-radius: 4px;
+    margin-top: 3px;
+}
+.campoInput i,
+.campoInput span{
+    color: var(--branco);
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+.campoInput input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0 0 0.5rem;
+    color: var(--branco);
+} 
+
+.campoInput input::-webkit-inner-spin-button,
+.campoInput input::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 0.5rem 0;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 2px solid var(--branco);
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(98deg, rgba(57, 210, 248, 1), rgba(48, 97, 96, 1));
+  cursor: pointer;
+}
+
+.btn:hover {
+    transition: .3s;
+    box-shadow: 0 0 rgba(0, 0, 0, .3);
+    color: var(--cinzaescuro);
+}
+
+#resultado {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-top: 1px solid var(--cinzaclaro);
+    padding: 0.75rem 0;
+}
+
+#desc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+}
+
+.dNone {
+    display: none;  
+}
+
+@media (max-width: 639px) {
+#verificadorPangrama {
+    color: #f8fafc;
+    background-color: var(--cinzaescuro);
+    padding: 2rem;
+    border-radius: 9px;
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+}
+
+@media (max-width: 519px) {
+    #verificadorPangrama {
+        color: #f8fafc;
+        background-color: var(--cinzaescuro);
+        padding: 2rem;
+        border-radius: 9px;
+        width: 90%;
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 363px) {
+    #verificadorPangrama {
+        color: #f8fafc;
+        background-color: var(--cinzaescuro);
+        padding: 2rem;
+        border-radius: 9px;
+        width: 90%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 317px) {
+    #verificadorPangrama {
+        color: #f8fafc;
+        background-color: var(--cinzaescuro);
+        padding: 2rem;
+        border-radius: 9px;
+        width: 90%;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}

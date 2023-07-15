@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Pangrama</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main id="container">
+        <section id="verificadorPangrama">
+            <form id="form">
+                <h1 id="titulo">Verificador de pangrama!</h1>
+                <div class="caixaInput">
+                    <label for="frase">Digite uma frase:</label>
+                    <div class="campoInput">
+                        <input type="text" id="frase" required>
+                    </div>
+                </div>
+
+                <button id="calculate" class="btn">
+                    Verificar
+                </button>
+            </form>
+                <div id="resultado">
+                    <div id="desc">
+                        <span id="pangramaMsg" class="dNone">Essa frase é um pangrama!</span>
+                        <span id="naoPangramaMsg" class="dNone">Essa frase não é um pangrama!</span>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
